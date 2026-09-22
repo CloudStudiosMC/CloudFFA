@@ -1,0 +1,125 @@
+prefix: "<gradient:#00d4a0:#1a8c7a><bold>CloudFFA</bold></gradient> <dark_gray>» <gray>"
+
+# ============================================
+#  Általános
+# ============================================
+no-permission: "<red>Nincs jogosultságod ehhez."
+player-only: "<red>Ezt a parancsot csak játékosok használhatják."
+unknown-command: "<red>Ismeretlen parancs. Használd a /ffaadmin parancsot."
+reloaded: "<green>Konfiguráció újratöltve."
+
+# ============================================
+#  Aréna kezelés
+# ============================================
+arena-created: "<green>Aréna <yellow>%arena%</yellow> létrehozva!"
+arena-deleted: "<red>Aréna <yellow>%arena%</yellow> törölve."
+arena-not-found: "<red>Aréna <yellow>%arena%</yellow> nem található."
+arena-exists: "<red>Már létezik ilyen nevű aréna."
+arena-updated: "<green>Aréna <yellow>%arena%</yellow> frissítve."
+arena-kit-set: "<green>Kit elmentve a <yellow>%arena%</yellow> arénához."
+arena-incomplete: "<red>Az aréna hiányos. Állítsd be a spawn pontot."
+arena-already-running: "<red>Ez az aréna már fut."
+arena-not-running: "<red>Ez az aréna nem fut."
+arena-started: "<green>Aréna <yellow>%arena%</yellow> elindítva."
+arena-stopped: "<red>Aréna <yellow>%arena%</yellow> leállítva."
+arena-stopped-all: "<red>Minden aréna leállítva."
+arena-no-kit: "<red>Ennek az arénának nincs kitje."
+
+# ============================================
+#  Broadcast-ok
+# ============================================
+arena-started-broadcast: "<green>Aréna <yellow>%arena%</yellow> elindult! Csatlakozz: <yellow>/ffa join %arena%</yellow> (<yellow>%seconds%s</yellow> múlva indul a PvP)"
+arena-countdown-broadcast: "<yellow>⚔ <white>Aréna <aqua>%arena%</aqua> <white>elindul <red>%seconds%s</red> múlva! Csatlakozz: <yellow>/ffa join %arena%</yellow>"
+arena-stopped-broadcast: "<red>Aréna <yellow>%arena%</yellow> leállt."
+arena-winner-broadcast: "<gold>%player%</gold> <green>megnyerte az FFA-t a <yellow>%arena%</yellow> arénában!"
+arena-no-winner-broadcast: "<red>Nincs nyertes a <yellow>%arena%</yellow> arénában."
+effect-phase-broadcast: "<aqua>Aréna <yellow>%arena%</yellow> <aqua>effekt fázis elindult <yellow>%seconds%s</yellow>-nél!"
+border-shrink-broadcast: "<red>A border összehúzódik <yellow>%size%</yellow> blokkra <yellow>%seconds%s</yellow> alatt!"
+
+# ============================================
+#  Csatlakozás / Kilépés
+# ============================================
+joined-ffa: "<green>Csatlakoztál a <yellow>%arena%</yellow> arénához!"
+left-ffa: "<red>Kiléptél az arénából."
+already-in-ffa: "<red>Már egy arénában vagy."
+not-in-ffa: "<red>Nem vagy arénában."
+join-failed: "<red>Nem sikerült csatlakozni az arénához."
+player-joined-arena: "<yellow>%player%</yellow> <green>csatlakozott! (<yellow>%count%</yellow> életben)"
+player-left-arena: "<yellow>%player%</yellow> <red>kilépett. (<yellow>%count%</yellow> életben)"
+
+# ============================================
+#  PvP
+# ============================================
+pvp-enabled: "<red><bold>A PvP bekapcsolt!</bold>"
+pvp-title: "<red><bold>PVP BEKAPCSOLVA"
+pvp-subtitle: "<gray>Harc!"
+
+# ============================================
+#  Halál
+# ============================================
+kill-message: "<green>Megöltél valakit! <gray>(Killek: <white>%kills%</white>, Streak: <yellow>%streak%</yellow>)"
+death-message: "<red>Megölt <yellow>%killer%</yellow>."
+death-actionbar: "<red>Meghaltál! <gray>Életben: <yellow>%alive%</yellow>"
+you-died-removed: "<gray>Eltávolítottunk az arénából."
+
+# ============================================
+#  Nyertes
+# ============================================
+winner-title: "<gold><bold>GYŐZELEM"
+winner-subtitle: "<gray>Megnyerted az FFA-t!"
+
+# ============================================
+#  Statisztikák
+# ============================================
+stats-header: "<dark_gray><st>---------------------"
+stats-title: "<aqua><bold>Statisztikáid"
+stats-kills: "<gray>Killek: <white>%kills%"
+stats-deaths: "<gray>Halálok: <white>%deaths%"
+stats-wins: "<gray>Győzelmek: <white>%wins%"
+stats-kd: "<gray>K/D: <white>%kd%"
+stats-best-streak: "<gray>Legjobb streak: <white>%best%"
+stats-footer: "<dark_gray><st>---------------------"
+
+# ============================================
+#  Használat
+# ============================================
+usage-join: "<red>Használat: /ffa join <aréna>"
+
+# ============================================
+#  Nyelv
+# ============================================
+language-current: "<gray>Jelenlegi nyelv: <yellow>%lang%"
+language-changed: "<green>Nyelv megváltoztatva: <yellow>%lang%</yellow>."
+language-not-found: "<red>Nyelv <yellow>%lang%</yellow> nem található."
+
+border-set: "<green>A <yellow>%arena%</yellow> border mérete <yellow>%size%</yellow> blokk (<yellow>%radius%</yellow> sugár)."
+border-center-set: "<green>A <yellow>%arena%</yellow> border középpontja beállítva."
+border-invalid-size: "<red>Érvénytelen border méret. Adj meg egy 0-nál nagyobb számot."
+usage-setbordercenter: "<red>Használat: /ffaadmin setbordercenter <aréna> [sugár]"
+
+# Not enough players
+arena-not-enough-players: "<red>Az aréna le lett mondva, mert nem volt elég játékos (minimum 2 szükséges)."
+arena-cancelled-broadcast: "<red>Aréna <yellow>%arena%</yellow> lemondva - nincs elég játékos."
+
+# ============================================
+#  Event értesítések (formázott)
+# ============================================
+event-separator: "<dark_gray>====================="
+
+# Border szűkítés event
+event-border-format: "<dark_gray>=====================\n<yellow>Event: <gold>Border szűkítés <dark_gray>- <green>%size% blokk <dark_gray>(<yellow>%seconds%s<dark_gray>)\n<gray>A border összehúzódik <green>%size%</green> blokkra <yellow>%seconds%</yellow> másodperc alatt.\n<dark_gray>====================="
+
+# Effekt fázis event
+event-effect-format: "<dark_gray>=====================\n<yellow>Event: <gold>Effekt fázis <dark_gray>- <green>%effect% <dark_gray>(<yellow>%duration%s<dark_gray>)\n<gray>Kaptál <green>%effect%</green> effektet <yellow>%duration%</yellow> másodpercre.\n<dark_gray>====================="
+
+# PvP bekapcsolva
+event-pvp-format: "<dark_gray>=====================\n<yellow>Event: <gold>PvP Bekapcsolva\n<gray>A PvP bekapcsolt! Harcolj az életben maradásért!\n<dark_gray>====================="
+
+# Aréna start
+event-start-format: "<dark_gray>=====================\n<yellow>Event: <gold>Aréna indult <dark_gray>- <green>%arena%\n<gray>Csatlakozz: <yellow>/ffa join %arena%</yellow> - <green>%seconds%s</green> múlva indul!\n<dark_gray>====================="
+
+# Aréna lemondva
+event-cancel-format: "<dark_gray>=====================\n<yellow>Event: <red>Lemondva <dark_gray>- <green>%arena%\n<gray>Nincs elég játékos (minimum 2 szükséges).\n<dark_gray>====================="
+
+# Nyertes
+event-winner-format: "<dark_gray>=====================\n<yellow>Event: <gold>Nyertes <dark_gray>- <green>%arena%\n<gray>Játékos <yellow>%player%</yellow> megnyerte az FFA-t!\n<dark_gray>====================="

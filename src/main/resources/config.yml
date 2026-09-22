@@ -1,0 +1,21 @@
+# ============================================
+#  CloudFFA - Configuration
+# ============================================
+#  Arena beállítások: plugins/CloudFFA/arenas/<név>.yml
+#  Scoreboard beállítások: szintén az arena fájlokban!
+# ============================================
+
+language: en
+
+# Death handling
+death:
+  keep-drops: false
+  broadcast-death-message: false
+
+# Vanishing (automatic on join, removed on death/leave)
+vanish:
+  invisibility-effect: true
+  hide-from-others: true
+
+# GameMode when inside arena
+arena-gamemode: SURVIVAL

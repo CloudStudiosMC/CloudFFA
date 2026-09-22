@@ -1,0 +1,99 @@
+name: arena1
+spawn: "world,0.0,64.0,0.0,0.0,0.0"
+exit-location: "world,10.0,64.0,10.0,0.0,0.0"
+border-center: "world,0.0,64.0,0.0,0.0,0.0"
+
+join-phase-seconds: 120
+
+kit:
+  contents: []
+  armor: []
+  offhand: null
+
+# ============================================
+#  EFFEKTEK
+#  Formátum: "TYPE:amplifier:duration"
+#  amplifier 0 = szint 1, 1 = szint 2, stb.
+#  duration = tickben (20 tick = 1 sec, 999999 = végtelen)
+# ============================================
+effects:
+  defaults:
+    - "SPEED:0:999999"
+  phases:
+    0:
+      - "SPEED:0:999999"
+    120:
+      - "SPEED:1:999999"
+      - "STRENGTH:0:999999"
+    240:
+      - "SPEED:1:999999"
+      - "STRENGTH:1:999999"
+
+# ============================================
+#  BORDER
+#  phases: kulcs = másodperc az indulás után
+#          size = új méret
+#          seconds = ennyi idő alatt szűkül
+# ============================================
+border:
+  default-size: 150.0
+  final-size: 20.0
+  phases:
+    120:
+      size: 120.0
+      seconds: 30
+    180:
+      size: 80.0
+      seconds: 30
+    240:
+      size: 50.0
+      seconds: 30
+    300:
+      size: 20.0
+      seconds: 30
+
+# ============================================
+#  NYERTES JUTALMA
+#  %player% = a nyertes neve
+# ============================================
+winner-rewards:
+  commands:
+    - "give %player% diamond 5"
+    - "eco give %player% 1000"
+
+# ============================================
+#  SCOREBOARD
+#  Placeholderek:
+#    %player%        - játékos neve
+#    %arena%         - aréna neve
+#    %alive%         - életben lévők száma
+#    %players%       - összes játékos
+#    %kills%         - ölések
+#    %deaths%        - halálok
+#    %wins%          - győzelmek
+#    %kd%            - K/D arány
+#    %streak%        - jelenlegi killstreak
+#    %best_streak%   - legjobb killstreak
+#    %remaining%     - hátralévő idő a PvP-ig
+#    %world%         - világ neve
+#    %online%        - online játékosok
+# ============================================
+scoreboard:
+  title: "<gradient:#00d4a0:#1a8c7a><bold>⚔ CLOUD FFA ⚔</bold></gradient>"
+  lines:
+    - "<dark_gray>┌────────────────────┐"
+    - "<gray>  Player: <white>%player%"
+    - "<gray>  Arena: <aqua>%arena%"
+    - "<dark_gray>└────────────────────┘"
+    - ""
+    - "<gradient:#00d4a0:#1a8c7a><bold>  » Match Info «</bold></gradient>"
+    - "<gray>  Alive: <green>%alive%<dark_gray>/<green>%players%"
+    - "<gray>  Countdown: <red>%remaining%s"
+    - ""
+    - "<gradient:#00d4a0:#1a8c7a><bold>  » Your Stats «</bold></gradient>"
+    - "<gray>  Kills: <white>%kills%"
+    - "<gray>  Streak: <yellow>%streak%"
+    - "<gray>  Best: <gold>%best_streak%"
+    - "<gray>  Wins: <light_purple>%wins%"
+    - ""
+    - "<gradient:#00d4a0:#1a8c7a>  play.cloudstudios.net</gradient>"

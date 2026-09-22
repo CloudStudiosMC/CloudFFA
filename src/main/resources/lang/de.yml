@@ -1,0 +1,125 @@
+prefix: "<gradient:#00d4a0:#1a8c7a><bold>CloudFFA</bold></gradient> <dark_gray>» <gray>"
+
+# ============================================
+#  Allgemein
+# ============================================
+no-permission: "<red>Du hast keine Berechtigung dafür."
+player-only: "<red>Dieser Befehl kann nur von Spielern verwendet werden."
+unknown-command: "<red>Unbekannter Befehl. Nutze /ffaadmin für Hilfe."
+reloaded: "<green>Konfiguration neu geladen."
+
+# ============================================
+#  Arena-Verwaltung
+# ============================================
+arena-created: "<green>Arena <yellow>%arena%</yellow> erstellt!"
+arena-deleted: "<red>Arena <yellow>%arena%</yellow> gelöscht."
+arena-not-found: "<red>Arena <yellow>%arena%</yellow> nicht gefunden."
+arena-exists: "<red>Eine Arena mit diesem Namen existiert bereits."
+arena-updated: "<green>Arena <yellow>%arena%</yellow> aktualisiert."
+arena-kit-set: "<green>Kit für Arena <yellow>%arena%</yellow> gespeichert."
+arena-incomplete: "<red>Arena ist unvollständig. Setze zuerst den Spawn."
+arena-already-running: "<red>Diese Arena läuft bereits."
+arena-not-running: "<red>Diese Arena läuft nicht."
+arena-started: "<green>Arena <yellow>%arena%</yellow> gestartet."
+arena-stopped: "<red>Arena <yellow>%arena%</yellow> gestoppt."
+arena-stopped-all: "<red>Alle Arenen gestoppt."
+arena-no-kit: "<red>Diese Arena hat kein Kit."
+
+# ============================================
+#  Broadcasts
+# ============================================
+arena-started-broadcast: "<green>Arena <yellow>%arena%</yellow> gestartet! Beitreten mit <yellow>/ffa join %arena%</yellow> (<yellow>%seconds%s</yellow> zum Beitreten)"
+arena-countdown-broadcast: "<yellow>⚔ <white>Arena <aqua>%arena%</aqua> <white>startet in <red>%seconds%s</red>! Beitreten mit <yellow>/ffa join %arena%</yellow>"
+arena-stopped-broadcast: "<red>Arena <yellow>%arena%</yellow> gestoppt."
+arena-winner-broadcast: "<gold>%player%</gold> <green>hat die FFA in <yellow>%arena%</yellow> gewonnen!"
+arena-no-winner-broadcast: "<red>Kein Gewinner in Arena <yellow>%arena%</yellow>."
+effect-phase-broadcast: "<aqua>Arena <yellow>%arena%</yellow> <aqua>Effektphase bei <yellow>%seconds%s</yellow> gestartet!"
+border-shrink-broadcast: "<red>Border schrumpft auf <yellow>%size%</yellow> Blöcke in <yellow>%seconds%s</yellow>!"
+
+# ============================================
+#  Beitreten / Verlassen
+# ============================================
+joined-ffa: "<green>Du bist Arena <yellow>%arena%</yellow> beigetreten!"
+left-ffa: "<red>Du hast die Arena verlassen."
+already-in-ffa: "<red>Du bist bereits in einer Arena."
+not-in-ffa: "<red>Du bist in keiner Arena."
+join-failed: "<red>Beitritt zur Arena fehlgeschlagen."
+player-joined-arena: "<yellow>%player%</yellow> <green>ist beigetreten! (<yellow>%count%</yellow> am Leben)"
+player-left-arena: "<yellow>%player%</yellow> <red>hat verlassen. (<yellow>%count%</yellow> am Leben)"
+
+# ============================================
+#  PvP
+# ============================================
+pvp-enabled: "<red><bold>PvP ist jetzt aktiviert!</bold>"
+pvp-title: "<red><bold>PVP AKTIVIERT"
+pvp-subtitle: "<gray>Kämpfe!"
+
+# ============================================
+#  Tod
+# ============================================
+kill-message: "<green>Du hast jemanden getötet! <gray>(Kills: <white>%kills%</white>, Streak: <yellow>%streak%</yellow>)"
+death-message: "<red>Du wurdest von <yellow>%killer%</yellow> getötet."
+death-actionbar: "<red>Du bist gestorben! <gray>Am Leben: <yellow>%alive%</yellow>"
+you-died-removed: "<gray>Du wurdest aus der Arena entfernt."
+
+# ============================================
+#  Gewinner
+# ============================================
+winner-title: "<gold><bold>SIEG"
+winner-subtitle: "<gray>Du hast die FFA gewonnen!"
+
+# ============================================
+#  Statistiken
+# ============================================
+stats-header: "<dark_gray><st>---------------------"
+stats-title: "<aqua><bold>Deine Statistiken"
+stats-kills: "<gray>Kills: <white>%kills%"
+stats-deaths: "<gray>Tode: <white>%deaths%"
+stats-wins: "<gray>Siege: <white>%wins%"
+stats-kd: "<gray>K/D: <white>%kd%"
+stats-best-streak: "<gray>Beste Streak: <white>%best%"
+stats-footer: "<dark_gray><st>---------------------"
+
+# ============================================
+#  Verwendung
+# ============================================
+usage-join: "<red>Verwendung: /ffa join <Arena>"
+
+# ============================================
+#  Sprache
+# ============================================
+language-current: "<gray>Aktuelle Sprache: <yellow>%lang%"
+language-changed: "<green>Sprache geändert zu <yellow>%lang%</yellow>."
+language-not-found: "<red>Sprache <yellow>%lang%</yellow> nicht gefunden."
+
+border-set: "<green>Border für <yellow>%arena%</yellow> auf <yellow>%size%</yellow> Blöcke gesetzt (<yellow>%radius%</yellow> Radius)."
+border-center-set: "<green>Border-Mittelpunkt für <yellow>%arena%</yellow> gesetzt."
+border-invalid-size: "<red>Ungültige Border-Größe. Bitte eine Zahl größer als 0 eingeben."
+usage-setbordercenter: "<red>Verwendung: /ffaadmin setbordercenter <Arena> [Radius]"
+
+# Not enough players
+arena-not-enough-players: "<red>Die Arena wurde abgesagt, da nicht genügend Spieler vorhanden waren (mindestens 2 erforderlich)."
+arena-cancelled-broadcast: "<red>Arena <yellow>%arena%</yellow> wurde abgesagt - nicht genügend Spieler."
+
+# ============================================
+#  Event-Benachrichtigungen (formatiert)
+# ============================================
+event-separator: "<dark_gray>====================="
+
+# Border-Schrumpfung
+event-border-format: "<dark_gray>=====================\n<yellow>Event: <gold>Border-Schrumpfung <dark_gray>- <green>%size% Blöcke <dark_gray>(<yellow>%seconds%s<dark_gray>)\n<gray>Die Border schrumpft auf <green>%size%</green> Blöcke in <yellow>%seconds%</yellow> Sekunden.\n<dark_gray>====================="
+
+# Effektphase
+event-effect-format: "<dark_gray>=====================\n<yellow>Event: <gold>Effektphase <dark_gray>- <green>%effect% <dark_gray>(<yellow>%duration%s<dark_gray>)\n<gray>Du hast <green>%effect%</green> für <yellow>%duration%</yellow> Sekunden erhalten.\n<dark_gray>====================="
+
+# PvP aktiviert
+event-pvp-format: "<dark_gray>=====================\n<yellow>Event: <gold>PvP Aktiviert\n<gray>PvP ist jetzt aktiviert! Kämpfe ums Überleben!\n<dark_gray>====================="
+
+# Arena-Start
+event-start-format: "<dark_gray>=====================\n<yellow>Event: <gold>Arena gestartet <dark_gray>- <green>%arena%\n<gray>Beitreten mit <yellow>/ffa join %arena%</yellow> - <green>%seconds%s</green> zum Beitreten!\n<dark_gray>====================="
+
+# Arena abgesagt
+event-cancel-format: "<dark_gray>=====================\n<yellow>Event: <red>Abgesagt <dark_gray>- <green>%arena%\n<gray>Nicht genügend Spieler (mindestens 2 erforderlich).\n<dark_gray>====================="
+
+# Gewinner
+event-winner-format: "<dark_gray>=====================\n<yellow>Event: <gold>Gewinner <dark_gray>- <green>%arena%\n<gray>Spieler <yellow>%player%</yellow> hat die FFA gewonnen!\n<dark_gray>====================="

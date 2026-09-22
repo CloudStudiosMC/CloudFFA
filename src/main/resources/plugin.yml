@@ -1,0 +1,32 @@
+name: CloudFFA
+version: 1.0.0
+main: com.cloudstudios.cloudffa.CloudFFA
+api-version: 1.20
+author: CloudStudios
+description: A modern FFA plugin with arenas, kits, borders and more.
+
+commands:
+  ffa:
+    description: Main FFA command
+    usage: /ffa <join|leave|stats|wins|list>
+  ffaadmin:
+    description: Admin FFA command
+    usage: /ffaadmin <create|delete|setspawn|...>
+    permission: cloudffa.admin
+    permission-message: "§cYou don't have permission to use this command."
+  language:
+    description: Change plugin language
+    usage: /language <en|hu|de>
+    permission: cloudffa.language
+    permission-message: "§cYou don't have permission to use this command."
+
+permissions:
+  cloudffa.admin:
+    description: Allows arena management
+    default: op
+  cloudffa.language:
+    description: Allows language switching
+    default: op
+  cloudffa.play:
+    description: Allows playing FFA
+    default: true
